@@ -82,11 +82,11 @@ DATABASES = {
 
     'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'student_enquiry_system1',
+         'NAME': 'student_enquiry_system2',
          'HOST': 'localhost',
          'USER':  'root',
          'PASSWORD': '',
-         'PORT': '3325',
+         'PORT': '3325', 
      }
 }
 
