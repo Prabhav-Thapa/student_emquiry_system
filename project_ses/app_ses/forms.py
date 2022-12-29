@@ -4,10 +4,10 @@ from .models import AppUser, Student, Course
 class UserRegisterForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
-        fields = ("full name","email","password","usertype","contact")
+        fields = ("full_name","email","password","usertype","contact")
         model = AppUser 
 
-class UserLogin(forms.ModelForm):
+class UserLoginForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         fields = ("email","password")
@@ -21,6 +21,6 @@ class CourseCreateForm(forms.ModelForm):
 
 class StudentCreateForm(forms.ModelForm):
     class Meta:
-        fields = ("first name","middle_name","last_name","email","contact","gender","blood_group","academic_level","academic_status","academic_org","academic_score","course","intake","shift","remarks")
+        fields = ("first_name","middle_name","last_name","email","contact","blood_group","academic_level","academic_status","academic_org","academic_score","course","intake","remarks","shift")
         model = Student 
         
